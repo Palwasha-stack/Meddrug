@@ -1,0 +1,13 @@
+{
+    "name": "meddrug-pk",
+    "version": "1.0.0",
+    "description": "Pakistan Medical Reference",
+    "main": "index.js",
+    "scripts": {
+        "start": "npx serve ."
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "serve": "^14.2.0"
+    }
+}
