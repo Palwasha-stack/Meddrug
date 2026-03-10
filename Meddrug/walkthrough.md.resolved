@@ -1,0 +1,20 @@
+# Medical Drug Website Prototype - Walkthrough
+
+## Summary
+The Medical Drug Website Prototype has been successfully created and recently enhanced. The application allows users to search for medications by generic name, brand name, formula, or indication, and view detailed information including contraindications, interactions, and guidelines tailored for the Pakistani market. It features a unique, premium 'Glassmorphism' design.
+
+## Files Created
+The following files were created in `c:\Users\LEGEND\Desktop\Meddrug`:
+- **[index.html](file:///c:/Users/LEGEND/Desktop/Meddrug/index.html)**: The main structure of the web application.
+- **[styles.css](file:///c:/Users/LEGEND/Desktop/Meddrug/styles.css)**: Premium, modern CSS styling using the Inter font family, teal accents, and smooth animations.
+- **[script.js](file:///c:/Users/LEGEND/Desktop/Meddrug/script.js)**: The core functionality, including the sample drug database, search logic, category filtering, and modal interactions.
+
+## How to View
+To view the website, simply open **[index.html](file:///c:/Users/LEGEND/Desktop/Meddrug/index.html)** in any modern web browser (like Google Chrome or Microsoft Edge).
+
+## Features Implemented
+1. **Dynamic Search**: Instant filtering based on user input (search by generic name, brand name, or indication).
+2. **Category Filters**: Quick filters for Antibiotics, Painkillers, Gastrointestinal, Anti-diabetic, and Allergy drugs.
+3. **Detailed Views**: A beautiful modal box that cleanly displays interactions, contraindications, indications, guidelines, and local Pakistani brand names.
+4. **Unique Premium Design (Glassmorphism)**: A vibrant pulsing gradient background paired with frosted glass cards (`backdrop-filter: blur`), glowing hover states, and modern typography.
+5. **Expanded Database**: Contains detailed data for 12 common medications in the Pakistani market (Panadol, Augmentin, Risek, Brufen, Glucophage, Ciproxin, Zithromax, Voltral, ZyrTEC, Motilium, Cefspan, Flagyl).

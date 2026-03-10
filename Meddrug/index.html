@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedDrug - Pakistan Medical Reference</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo"><i class="fa-solid fa-staff-snake"></i> MedDrug <span>PK</span></h1>
+            <p class="subtitle">Comprehensive Drug Reference & Guidelines</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <div class="search-box">
+                <i class="fa-solid fa-search search-icon"></i>
+                <input type="text" id="searchInput" placeholder="Search by Generic Name, Brand Name, or Indication...">
+                <button id="clearBtn" class="clear-btn"><i class="fa-solid fa-times"></i></button>
+            </div>
+            <div class="filters">
+                <span class="filter-badge active">All</span>
+                <span class="filter-badge">Antibiotics</span>
+                <span class="filter-badge">Painkillers</span>
+                <span class="filter-badge">Gastrointestinal</span>
+                <span class="filter-badge">Anti-diabetic</span>
+                <span class="filter-badge">Allergy</span>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <h2 class="results-title">Available Drugs (<span id="drugCount">0</span>)</h2>
+            <div id="drugGrid" class="drug-grid">
+                <!-- Drug Cards Will Be Injected Here via JS -->
+            </div>
+            <div id="noResults" class="no-results hidden">
+                <i class="fa-solid fa-prescription-bottle-medical"></i>
+                <h3>No drugs found</h3>
+                <p>Try adjusting your search terms.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Drug Details -->
+    <div id="drugModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalGenericName" class="modal-title">Generic Name</h2>
+                <button id="closeModal" class="close-btn"><i class="fa-solid fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-tags">
+                    <span class="tag formula-tag"><i class="fa-solid fa-flask"></i> <span
+                            id="modalFormula">Formula</span></span>
+                </div>
+
+                <div class="brand-names-section">
+                    <h3><i class="fa-solid fa-tags"></i> Available Brands in Pakistan</h3>
+                    <div id="modalBrands" class="brand-tags">
+                        <!-- Brand tags -->
+                    </div>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card indications">
+                        <h3><i class="fa-solid fa-check-circle"></i> Indications</h3>
+                        <ul id="modalIndications"></ul>
+                    </div>
+
+                    <div class="info-card contraindications">
+                        <h3><i class="fa-solid fa-ban"></i> Contraindications</h3>
+                        <ul id="modalContraindications"></ul>
+                    </div>
+
+                    <div class="info-card interactions">
+                        <h3><i class="fa-solid fa-triangle-exclamation"></i> Interactions</h3>
+                        <ul id="modalInteractions"></ul>
+                    </div>
+
+                    <div class="info-card guidelines">
+                        <h3><i class="fa-solid fa-book-medical"></i> Guidelines / Dosage</h3>
+                        <p id="modalGuidelines"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 MedDrug Pakistan. Information provided is for reference purposes.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
